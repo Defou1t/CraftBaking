@@ -1,0 +1,73 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+
+
+}
+
+div {
+ display: block;
+}
+
+ul, li {
+    display: block;
+}
+
+.container {
+ width: 1170px;
+ margin: 0 auto; /*позиция по центру*/
+}
+
+
+.header {
+ text-decoration: none;
+ width: auto;
+}
+
+
+
+
+.header-top{
+ padding: 0 2%;
+ display: flex;
+ background-color: #111111;
+ color: #fff;
+ text-transform: uppercase;
+ font-family: monospace;
+ align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.mailico:before {
+    content: "\1F582";
+    font-size: 16px;
+    color: white;
+}
+.menu li{
+    margin-right: 40px;
+}
+.header a {
+text-decoration: none;
+}
+
+.tel{
+    margin-left: auto;
+}
+
+
+header a {
+ color: #fff;
+
+}
+
+
+
+
+
+

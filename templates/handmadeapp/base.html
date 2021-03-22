@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+    <meta name=viewport content="width=device-width, initial-scale=1.0 ">
+</head>
+<body>
+  <header id="header" class="header">
+      <div class="header-top">
+            <ul class="menu">
+                <li><span class="mailico"> craft.baking2021@gmail.com </span> </li>
+                <li><a class="MainPage" href="{% url 'home' %}">Главная</a></li>
+                <li><a class="AboutUs" href="{% url 'about' %}">Про нас</a></li>
+            </ul>
+                 <a href="tel:+380971675965" class="tel">+380 97 000 00 00</a>
+      </div>
+
+      <div class="container">
+            <nav class="nav">
+                <img src="{% static "imgonline-com-ua-Resize-pTJTpjTZhllR20RD.png" %}" alt="">
+            </nav>
+      </div>
+  </header>
+    {% block content %}{% endblock %}
+
+  <footer id="footer" class="footer">
+      <div class="container">
+
+      </div>
+  </footer>
+
+
+  {% block extrahead %}
+      <script type="text/javascript" src={% static "js/main.js" %}></script>
+  {% endblock extrahead %}
+</body>
+</html>
